@@ -1,0 +1,82 @@
+.btn-container{
+  display: flexbox;
+  margin: 25px;
+  margin-bottom: 25px;
+}
+
+/* Estiliza os botões */
+.btn-add,
+.btn-remove,
+.btn-clear {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: "Verdana", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Estiliza o botão Adicionar (Add) */
+.btn-add {
+  background-color: #4caf50;
+  /* Verde mais escuro */
+  color: white;
+  border: 2px solid #4caf50;
+  /* Borda verde */
+}
+
+.btn-add:hover {
+  background-color: #45a049;
+  /* Verde mais claro no hover */
+}
+
+/* Estiliza o botão Remover (Remove) */
+.btn-remove {
+  background-color: #ff5733;
+  /* Vermelho */
+  color: white;
+  border: 2px solid #ff5733;
+  /* Borda vermelha */
+}
+
+.btn-remove:hover {
+  background-color: #ff5733;
+  /* Mantém o vermelho no hover */
+}
+
+/* Estiliza o botão Limpar texto (Clear text) */
+.btn-clear {
+  background-color: #808080;
+  /* Cinza escuro */
+  color: white;
+  border: 2px solid #808080;
+  /* Borda cinza */
+}
+
+.btn-clear:hover {
+  background-color: #737373;
+  /* Cinza mais claro no hover */
+}
+
+/* Estiliza o campo de entrada de texto */
+.in-item {
+  background-color: #ffffff;
+  /* Cor de fundo escura */
+  color: rgb(0, 0, 0);
+  border: 2px solid #333;
+  /* Borda escura */
+  border-radius: 5px;
+  /* Raio da borda maior */
+  padding: 10px 10px 10px;
+  width: 385px;
+  /* Ajuste a largura conforme necessário */
+}
+
+.in-item::placeholder {
+  color: #000000;
+  /* Cor do placeholder (texto de exemplo) */
+  font-style: italic;
+  /* Estilo do texto em itálico, se desejado */
+}

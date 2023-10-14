@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR"></html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="src/css/global.css"/>
+  </head>
+  </head>
+
+  <body>
+    <main id="container">
+      <!-- Painel esquerdo -->
+      <div id="left-container">
+        <!-- Topo do painel esquerdo -->
+        <div class="top-left-panel" id="top-left">
+          <!-- Relógio -->
+          <ul id="relogio">
+            <li class="item-circle" style="--clr: #d9ff02">
+              <i class="pontos hr_ponto"></i>
+              <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="hh"></circle>
+              </svg>
+              <div id="horas">00</div>
+            </li>
+            <li class="item-circle" style="--clr: #bb00ff">
+              <i class="pontos min_ponto"></i>
+              <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="mm"></circle>
+              </svg>
+              <div id="minutos">00</div>
+            </li>
+            <li class="item-circle" style="--clr: #ff9100">
+              <i class="pontos sec_ponto"></i>
+              <svg>
+                <circle cx="70" cy="70" r="70"></circle>
+                <circle cx="70" cy="70" r="70" id="ss"></circle>
+              </svg>
+              <div id="segundos">00</div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Parte inferior do painel esquerdo -->
+        <div class="bottom-left-panel" id="bottom-left">
+          <div class="panel-fundo" id="fundoSelect">
+            <div class="mt-5">
+              <form>
+                <select id="inputSelectlist" class="custom-selectlist">
+                  <option id="primeiraOpcao">Selecione uma opção</option>
+                </select>
+              </form>
+            </div>
+            <input
+              type="text"
+              id="inputItem"
+              placeholder="Insira um item"
+              class="in-item"
+            />
+            <div id="snackbar">Some text some message..</div>
+            <div class="btn-container">
+              <button
+                onclick="snackBar('Adicionado com sucesso')"
+                id="buttonAdd"
+                class="btn-add"
+              >
+                Adicionar
+              </button>
+              <button
+                onclick="snackBar('Removido com sucesso')"
+                id="buttonRemove"
+                class="btn-remove"
+              >
+                Remover
+              </button>
+              <button id="buttonClear" class="btn-clear">Limpar texto</button>
+            </div>
+            <label id="labelText" class="lb-text"></label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Painel direito -->
+      <aside class="right-panel">
+        <div class="ball" id="ballColor"></div>
+      </aside>
+    </main>
+    <script src="src/js/relogio.js"></script>
+    <script src="src/js/seletor.js"></script>
+    <script src="src/js/ball.js"></script>
+    <script src="src/js/snackbar.js"></script>
+  </body>
+</html>

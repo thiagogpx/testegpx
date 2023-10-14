@@ -1,0 +1,104 @@
+/* Estiliza o relógio, adicionando espaçamento, bordas arredondadas e outros estilos. */
+#relogio {
+  display: flex;
+  gap: 40px;
+  /* Espaço entre os elementos filhos */
+  background-color: #2b2b2b;
+  padding: 20px 20px 40px;
+  user-select: none;
+  border-radius: 10px;
+}
+
+/* Define o estilo de um item circular, centralizando-o vertical e horizontalmente. */
+.item-circle {
+  position: relative;
+  list-style: none;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  /* Alinhe na horizontal */
+  align-items: center;
+  /* Alinhe na vertical */
+}
+
+/* Estiliza os elementos SVG dentro do item circular, ajustando a posição e o tamanho. */
+.item-circle svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 3px;
+  left: 3px;
+  transform: rotate(270deg);
+}
+
+/* Estiliza as horas, minutos e segundos, definindo a posição, tamanho, cor e outros estilos. */
+#horas,
+#minutos,
+#segundos {
+  position: absolute;
+  /* Para aparecer por cima do círculo */
+  font-weight: 500;
+  padding-top: 10px;
+  font-size: 1.5em;
+  text-align: center;
+  text-transform: uppercase;
+  color: aliceblue;
+}
+
+/* Estiliza o span dentro das horas, minutos e segundos, adicionando espaçamento e estilo de letra. */
+#horas span,
+#minutos span,
+#segundos span {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.65em;
+  letter-spacing: 0.1em;
+}
+
+/* Estiliza o relógio AP, ajustando a posição e o estilo do texto. */
+#relogio .ap {
+  list-style: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  transform: translateX(-20px);
+  /* Move o AP mais próximo da caixa */
+}
+
+/* Estiliza o círculo no SVG, definindo cores e outros estilos. */
+.item-circle svg circle {
+  fill: transparent;
+  stroke-width: 4px;
+  stroke: var(--clr);
+  /* Cor da linha definida no SVG */
+  stroke-dasharray: 440;
+  transform: translate(2px, 2px);
+  /* Para torná-lo totalmente visível */
+}
+
+/* Estiliza o primeiro círculo do SVG com uma cor específica. */
+.item-circle svg circle:nth-of-type(1) {
+  stroke: #040305;
+}
+
+/* Define o estilo dos pontos dentro do item circular. */
+.item-circle .pontos {
+  position: absolute;
+  top: 3px;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  width: 100%;
+  height: 103%;
+}
+
+/* Estiliza os pontos antes do elemento do item circular. */
+.item-circle .pontos::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background: var(--clr);
+  border-radius: 50%;
+}
