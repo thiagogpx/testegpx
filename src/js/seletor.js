@@ -7,7 +7,6 @@ const buttonClear = document.querySelector("#buttonClear");
 
 // Elemento de label
 const labelText = document.querySelector("#labelText");
-const colorSnackbar = document.querySelector("#snackbar");
 
 // Atualiza o label com o valor selecionado no select.
 setInterval(() => {
