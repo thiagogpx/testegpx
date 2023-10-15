@@ -2,20 +2,29 @@
 
 ## Descrição
 
-Este é o README para o meu projeto web. O projeto é uma página web que inclui um relógio analógico, um seletor de itens e uma bola que se move aleatoriamente no painel direito.
+Este é o README para o meu projeto web de teste de proficiência em programação para Geopixel. O projeto é uma página web que inclui um relógio analógico, um seletor de itens e uma bola que se move aleatoriamente no painel direito.
 
 ## Pré-requisitos
 
-- Navegador da web para visualização.
+Antes de iniciar, certifique-se de atender aos seguintes requisitos:
+
+- Navegador da web atualizado para visualização.
 
 ## Instruções de Uso
 
+Siga as etapas abaixo para executar o projeto:
+
 1. Abra o arquivo `index.html` no seu navegador.
-2. Você verá uma página web com um relógio analógico, um seletor de itens e uma bola que se move aleatoriamente no painel direito.
-3. Use o seletor para adicionar e remover itens na lista.
+2. Você verá uma página web que contém:
+    - Um relógio analógico.
+    - Um seletor de itens.
+    - Uma bola que se move aleatoriamente no painel direito.
+3. Use o seletor de itens para adicionar e remover elementos da lista.
 4. Passe o mouse sobre a bola para movê-la aleatoriamente e alterar sua cor.
 
 ## Estrutura do Projeto
+
+A estrutura do projeto é a seguinte:
 
 - `index.html`: Página web principal.
 - `src/css/global.css`: Estilos globais da página.
@@ -32,8 +41,8 @@ Este é o README para o meu projeto web. O projeto é uma página web que inclui
 
 ## Exemplos
 
-- Nenhum exemplo fornecido neste README, mas a página web fornece exemplos interativos.
+Embora não haja exemplos fornecidos neste README, a página web fornece uma experiência interativa para demonstrar as funcionalidades do projeto.
 
 ## Créditos
 
-- Este projeto foi criado por Thiago Santos.
+Este projeto foi desenvolvido por Thiago Santos. Para mais informações, entre em contato em thiago.santos@geopixelcom.br.
