@@ -54,7 +54,6 @@ buttonRemove.addEventListener("click", () => {
     selectOption.selectedIndex = 0;
   } else if (value === "Selecione uma opção") {
     snackBar("Este item não pode ser removido, escolha outro");
-    alertLabelNone();
     inputItem.value = "";
   } else {
     snackBar("O item não existe na lista");

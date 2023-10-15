@@ -1,7 +1,17 @@
-/* URL com todos os arquivos css */
+/* Importa o arquivo CSS principal que contém estilos gerais. */
 @import url("main.css");
+
+/* Importa o arquivo CSS para estilização do relógio. */
 @import url("relogio.css");
+
+/* Importa o arquivo CSS para estilização do seletor. */
 @import url("seletor.css");
+
+/* Importa o arquivo CSS para estilização da animação da bola. */
 @import url("ball.css");
+
+/* Importa o arquivo CSS para estilização de botões. */
 @import url("buttons.css");
+
+/* Importa o arquivo CSS para estilização da barra de notificação (snackbar). */
 @import url("snackbar.css");

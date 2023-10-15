@@ -1,4 +1,4 @@
-/* Estiliza o fundo do seletor */
+/* Estiliza o painel de fundo do seletor */
 .panel-fundo {
   position: absolute;
   text-align: center;
@@ -10,9 +10,10 @@
   background-color: #3a3a3a;
   padding: 40px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  transition: flex 0.5s;
+  transition: flex 0.5s; /* Transição suave de flexbox */
 }
 
+/* Classe .mt-25 para espaçamento vertical */
 .mt-25 {
   display: flex;
   margin: 25px;
@@ -22,45 +23,31 @@
 /* Estiliza a etiqueta de texto */
 .lb-text {
   text-align: center;
-  color: #ffffff;
-  /* Cor de destaque (substitua pela cor desejada) */
-  font-weight: bold;
-  /* Deixa o texto em negrito, se desejar */
+  color: #ffffff; /* Cor do texto de destaque (substitua pela desejada) */
+  font-weight: bold; /* Texto em negrito, se necessário */
 }
 
 /* Estiliza o elemento select */
 .custom-selectlist {
-  width: 385px;
-  /* Define a largura do select para preencher a largura do contêiner */
-  padding: 10px 10px 10px;
-  /* Adiciona espaçamento interno para melhorar a aparência */
-  border: 2px solid #333;
-  /* Adiciona uma borda ao select */
-  border-radius: 5px;
-  /* Raio da borda maior */
-  background-color: #ffffff;
-  /* Cor de fundo */
-  color: #333;
-  /* Cor do texto */
-  font-size: 16px;
-  /* Tamanho da fonte */
+  width: 385px; /* Define a largura do select para preencher o contêiner */
+  padding: 10px 10px 10px; /* Adiciona espaçamento interno para melhor aparência */
+  border: 2px solid #333; /* Adiciona uma borda ao select */
+  border-radius: 5px; /* Raio da borda maior */
+  background-color: #ffffff; /* Cor de fundo */
+  color: #333; /* Cor do texto */
+  font-size: 16px; /* Tamanho da fonte */
 }
 
 /* Estiliza as opções dentro do select */
 .custom-selectlist option {
-  background-color: #ffffff;
-  /* Cor de fundo das opções */
-  color: #000000;
-  /* Cor do texto das opções */
-  font-size: 16px;
-  /* Tamanho da fonte das opções */
+  background-color: #ffffff; /* Cor de fundo das opções */
+  color: #000000; /* Cor do texto das opções */
+  font-size: 16px; /* Tamanho da fonte das opções */
 }
 
 /* Estiliza as opções selecionadas dentro do select */
 .custom-selectlist option:checked {
-  background-color: #ffffff;
-  /* Cor de fundo da opção selecionada */
-  border-radius: 15px;
-  color: #000000;
-  /* Cor do texto da opção selecionada */
+  background-color: #ffffff; /* Cor de fundo da opção selecionada */
+  border-radius: 15px; /* Borda arredondada */
+  color: #000000; /* Cor do texto da opção selecionada */
 }

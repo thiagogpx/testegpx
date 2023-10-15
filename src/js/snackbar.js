@@ -1,4 +1,4 @@
-// Função para o snackBar com o text para termos botões funcionalidades novas.
+// Função para o snackBar com o text para mudarmos a mensagem do snack
 function snackBar(text) {
   var x = document.getElementById("snackbar");
   x.innerHTML = text; // Define o texto do snackbar

@@ -1,13 +1,11 @@
-.btn-container{
+.btn-container {
   display: flexbox;
   margin: 25px;
   margin-bottom: 25px;
 }
 
 /* Estiliza os botões */
-.btn-add,
-.btn-remove,
-.btn-clear {
+.btn {
   border: none;
   border-radius: 5px;
   padding: 10px 20px;

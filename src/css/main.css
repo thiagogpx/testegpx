@@ -14,30 +14,30 @@ html {
   overflow: hidden;
 }
 
-/* Define um container principal que usa flexbox para organizar o layout. */
+/* Define um container principal que utiliza flexbox para organizar o layout. */
 #container {
   display: flex;
   height: 100%;
 }
 
-/* Define um container esquerdo que também utiliza flexbox e tem uma disposição em coluna. */
+/* Define um container esquerdo que também utiliza flexbox e possui uma disposição em coluna. */
 #left-container {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 
-/* Estiliza o painel superior esquerdo, alinhando os itens vertical e horizontalmente. */
+/* Estiliza o painel superior esquerdo, alinhando vertical e horizontalmente seus itens. */
 .top-left-panel {
   flex: 1;
   background-color: #2b2b2b;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Alinhe os itens verticalmente ao centro */
-  align-items: center; /* Alinhe os itens horizontalmente ao centro */
+  justify-content: center; /* Alinha verticalmente os itens ao centro */
+  align-items: center; /* Alinha horizontalmente os itens ao centro */
 }
 
-/* Define um painel direito com um fundo preto e uma posição relativa. */
+/* Define um painel direito com fundo preto e posição relativa. */
 .right-panel {
   position: relative;
   width: 50%;
@@ -46,14 +46,14 @@ html {
   border-left: 10px solid #000;
 }
 
-/* Estiliza o painel inferior esquerdo, alinhando os itens vertical e horizontalmente. */
+/* Estiliza o painel inferior esquerdo, alinhando vertical e horizontalmente seus itens. */
 .bottom-left-panel {
   flex: 1;
   gap: 5px;
   background-color: #2b2b2b;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Alinhe os itens verticalmente ao centro */
-  align-items: center; /* Alinhe os itens horizontalmente ao centro */
+  justify-content: center; /* Alinha verticalmente os itens ao centro */
+  align-items: center; /* Alinha horizontalmente os itens ao centro */
   border-top: 10px solid #000;
 }

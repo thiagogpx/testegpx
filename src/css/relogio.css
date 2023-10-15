@@ -2,7 +2,7 @@
 #relogio {
   display: flex;
   gap: 40px;
-  /* Espaço entre os elementos filhos */
+  /* Define o espaço entre os elementos filhos */
   background-color: #2b2b2b;
   padding: 20px 20px 40px;
   user-select: none;
@@ -17,9 +17,9 @@
   height: 150px;
   display: flex;
   justify-content: center;
-  /* Alinhe na horizontal */
+  /* Alinhamento horizontal centralizado */
   align-items: center;
-  /* Alinhe na vertical */
+  /* Alinhamento vertical centralizado */
 }
 
 /* Estiliza os elementos SVG dentro do item circular, ajustando a posição e o tamanho. */
@@ -37,7 +37,7 @@
 #minutos,
 #segundos {
   position: absolute;
-  /* Para aparecer por cima do círculo */
+  /* Para aparecerem sobre o círculo */
   font-weight: 500;
   padding-top: 10px;
   font-size: 1.5em;
@@ -63,7 +63,7 @@
   font-weight: bold;
   font-size: 1em;
   transform: translateX(-20px);
-  /* Move o AP mais próximo da caixa */
+  /* Move o "AM" ou "PM" mais próximo da caixa */
 }
 
 /* Estiliza o círculo no SVG, definindo cores e outros estilos. */
@@ -74,7 +74,7 @@
   /* Cor da linha definida no SVG */
   stroke-dasharray: 440;
   transform: translate(2px, 2px);
-  /* Para torná-lo totalmente visível */
+  /* Para torná-lo completamente visível */
 }
 
 /* Estiliza o primeiro círculo do SVG com uma cor específica. */

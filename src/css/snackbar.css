@@ -1,35 +1,37 @@
-/* https://www.w3schools.com/howto/howto_js_snackbar.asp */
+/* Estilos para o snackbar, uma caixa de mensagem flutuante para feedback. */
 #snackbar {
   display: flex;
-  visibility: hidden;
+  visibility: hidden; /* Inicialmente oculto */
   min-width: 250px;
-  margin-left: -125px;
+  margin-left: -125px; /* Centralizado horizontalmente */
   background-color: #000;
-  color: #fff;
+  color: #fff; /* Texto branco */
   text-align: center;
   border-radius: 2px;
   padding: 16px;
-  position: fixed;
-  z-index: 1;
-  left: 25%;
-  bottom: 7px;
-  font-size: 17px;
+  position: fixed; /* Posição fixa na tela */
+  z-index: 1; /* Empilhamento acima de outros elementos */
+  left: 25%; /* Alinhado à esquerda da tela */
+  bottom: 7px; /* Espaço inferior */
+  font-size: 17px; /* Tamanho da fonte */
 }
 
+/* Classe .show para tornar o snackbar visível com animações de entrada e saída. */
 #snackbar.show {
   visibility: visible;
   -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
   animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
+/* Animação de entrada para o snackbar. */
 @-webkit-keyframes fadein {
   from {
-    bottom: 0;
-    opacity: 0;
+    bottom: 0; /* Inicia na parte inferior */
+    opacity: 0; /* Inicialmente transparente */
   }
   to {
-    bottom: 7px;
-    opacity: 1;
+    bottom: 7px; /* Desloca-se para cima */
+    opacity: 1; /* Torna-se visível */
   }
 }
 
@@ -44,14 +46,15 @@
   }
 }
 
+/* Animação de saída para o snackbar após um atraso. */
 @-webkit-keyframes fadeout {
   from {
-    bottom: 7px;
-    opacity: 1;
+    bottom: 7px; /* Inicia na parte superior */
+    opacity: 1; /* Inicialmente visível */
   }
   to {
-    bottom: 0;
-    opacity: 0;
+    bottom: 0; /* Desloca-se para baixo */
+    opacity: 0; /* Torna-se transparente */
   }
 }
 
